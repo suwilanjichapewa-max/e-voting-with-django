@@ -45,7 +45,7 @@ def account_register(request):
             voter.admin = user
             user.save()
             voter.save()
-            messages.success(request, "Account created. You can login now!")
+            messages.success(request, "Account created. You can login now!!")
             return redirect(reverse('account_login'))
         else:
             messages.error(request, "Provided data failed validation")
